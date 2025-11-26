@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this is a Bash script that displays the content of the file /etc/passwd.
-while IFS=: read -r username password uid gid full_name home shell; do
+# this is a Bash script that displays the content of the file /etc/paswd.
+while IFS=: read -r username _ uid _ _ home _; do
     echo "$username:$uid:$home"
 done < /etc/passwd
