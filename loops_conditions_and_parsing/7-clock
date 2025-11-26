@@ -2,9 +2,10 @@
 # This is a Bash script that displays numbers from 1 to 100.
 hour=0
 while [ $hour -le 12 ]; do
+	hour=$((hour+1))
 	minute=1
 	while [ $minute -le 59 ]; do
-		echo "$hour $minute"
+		echo "$minute"
 	minute=$((minute+1))
 	done
 	hour=$((hour+1))
