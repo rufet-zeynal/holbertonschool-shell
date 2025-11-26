@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This is a Bash script that displays Best School 10 times with until.
 count=1
-until [ $count -le 10 ]; do
+until [ $count -gt 10 ]; do
 	echo "Best School"
 	count=$((count+1))
 done
