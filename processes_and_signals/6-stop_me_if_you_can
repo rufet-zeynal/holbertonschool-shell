@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# cannot use kill or killall
+while true; do
+	echo "To infinity and beyond"
+done
