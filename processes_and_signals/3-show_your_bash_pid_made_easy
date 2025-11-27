@@ -3,7 +3,6 @@
 #!/usr/bin/env bash
 for pid in /proc/[0-9]*; do
     if [ -f "$pid/comm" ] && [[ $(cat "$pid/comm") == bash ]]; then
-        echo "$(basename $pid) bash"
+        echo "$(basename "$pid") bash"
     fi
 done
-
