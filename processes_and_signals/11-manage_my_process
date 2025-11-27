@@ -11,12 +11,13 @@ case "$1" in
         ;;
     
     stop)
-        if [ -f "$PIDFILE" ]; then
-            kill "$(cat "$PIDFILE")"
-            rm -f "$PIDFILE"
-            echo "manage_my_process stopped"
-        fi
-        ;;
+    if [ -f "$PIDFILE" ]; then
+        kill "$(cat "$PIDFILE")"
+        rm -f "$PIDFILE"
+        echo "manage_my_process stopped"
+    fi
+    ;;
+
     
     restart)
         if [ -f "$PIDFILE" ]; then
