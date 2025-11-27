@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Comment on previous exercise command
+# shellcheck disable=SC2009
+ps auxf | grep bash
