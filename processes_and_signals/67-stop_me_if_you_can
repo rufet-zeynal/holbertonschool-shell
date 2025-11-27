@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# 67-stop_me_if_you_can: send SIGTERM to 7-highlander
+kill -s SIGTERM $(pgrep -f 7-highlander)
